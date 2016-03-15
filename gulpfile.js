@@ -54,7 +54,7 @@ gulp.task("css", function () {
 */
 gulp.task('js', function () {
   return gulp.src('src/client/assets/js/index.coffee')
-     .pipe(browserify({ transform: ['coffeeify'], extensions: ['.coffee'] }))
+     .pipe(browserify({ transform: ['coffeeify', 'html2js-browserify'], extensions: ['.coffee'] }))
      .pipe(concat('index.js'))
      .pipe(gulp.dest('public/js'));
 });

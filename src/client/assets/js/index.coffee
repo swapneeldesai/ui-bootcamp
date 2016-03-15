@@ -1,5 +1,5 @@
-function test() {
-  console.log('test');
-}
+var Handlebars = require('handlebars');
+var partial    = require('./test.html');
+var template   = Handlebars.compile(partial);
 
-test()
+console.log(template({title: 'test', body: 'test'}));
