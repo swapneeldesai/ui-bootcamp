@@ -1,5 +1,6 @@
-var Handlebars = require('handlebars');
-var partial    = require('./test.html');
-var template   = Handlebars.compile(partial);
+Handlebars    = require 'handlebars'
+ImageService  = require './services/ImageService'
+imageTemplate = Handlebars.compile require '../partials/images.hb.html'
 
-console.log(template({title: 'test', body: 'test'}));
+ImageService.getImage 'sunrise', (images) ->
+  document.body.innerHTML = imageTemplate {images: images}

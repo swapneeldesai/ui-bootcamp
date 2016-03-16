@@ -53,7 +53,7 @@ gulp.task("css", function () {
   Compiles CoffeeScript to JavaScript and outputs to public folder as js/*.js:
 */
 gulp.task('js', function () {
-  return gulp.src('src/client/assets/js/index.coffee')
+  return gulp.src('src/client/assets/js/index.coffee', { read: false })
      .pipe(browserify({ transform: ['coffeeify', 'html2js-browserify'], extensions: ['.coffee'] }))
      .pipe(concat('index.js'))
      .pipe(gulp.dest('public/js'));
@@ -62,7 +62,7 @@ gulp.task('js', function () {
 
 /*
   Watch:
-  Watches on js, css and jade files. 
+  Watches on js, css and jade files.
 */
 
 gulp.task('watch', function() {
@@ -93,4 +93,4 @@ gulp.task('bundle', function(callback) {
 
 gulp.task('run', function(callback) {
   return runSequence('bundle', 'serve', 'watch', callback);
-}); 
+});
