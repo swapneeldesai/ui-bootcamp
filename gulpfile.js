@@ -41,7 +41,7 @@ gulp.task('jade', function() {
   Compiles SCSS to CSS and outputs to public folder as css/*.css:
 */
 gulp.task("css", function () {
-  return gulp.src("src/client/assets/css/**/*.scss")
+  return gulp.src("src/client/assets/css/style.scss")
       .pipe(scss())
       .pipe(rename({basename: "style"}))
       .pipe(gulp.dest("public/css"));
