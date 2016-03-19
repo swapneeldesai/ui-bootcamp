@@ -49536,7 +49536,7 @@ module.exports={
   "_args": [
     [
       "tough-cookie@~2.2.0",
-      "/Users/shridhardeshmukh/Documents/Projects/MyProjects/ui-bootcamp/node_modules/request"
+      "/Users/vishnun/projects/uibootcamp/uibootcamp6/ui-bootcamp/node_modules/request"
     ]
   ],
   "_from": "tough-cookie@>=2.2.0 <2.3.0",
@@ -49570,7 +49570,7 @@ module.exports={
   "_shasum": "c83a1830f4e5ef0b93ef2a3488e724f8de016ac7",
   "_shrinkwrap": null,
   "_spec": "tough-cookie@~2.2.0",
-  "_where": "/Users/shridhardeshmukh/Documents/Projects/MyProjects/ui-bootcamp/node_modules/request",
+  "_where": "/Users/vishnun/projects/uibootcamp/uibootcamp6/ui-bootcamp/node_modules/request",
   "author": {
     "email": "jstashewsky@salesforce.com",
     "name": "Jeremy Stashewsky"
@@ -49619,24 +49619,24 @@ module.exports={
   "homepage": "https://github.com/SalesforceEng/tough-cookie",
   "keywords": [
     "HTTP",
-    "RFC2965",
-    "RFC6265",
     "cookie",
-    "cookiejar",
     "cookies",
+    "set-cookie",
+    "cookiejar",
     "jar",
-    "set-cookie"
+    "RFC6265",
+    "RFC2965"
   ],
   "license": "BSD-3-Clause",
   "main": "./lib/cookie",
   "maintainers": [
     {
-      "name": "jstash",
-      "email": "jeremy@goinstant.com"
+      "email": "jeremy@goinstant.com",
+      "name": "jstash"
     },
     {
-      "name": "goinstant",
-      "email": "services@goinstant.com"
+      "email": "services@goinstant.com",
+      "name": "goinstant"
     }
   ],
   "name": "tough-cookie",
