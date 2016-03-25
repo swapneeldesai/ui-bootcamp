@@ -2,3 +2,11 @@ node_modules/
 **/.DS_Store
 .gulp-scss-cache/
 .sass-cache/
+
+.idea/
+testconfig.json
+#IDE config
+failures
+screenshots/base_images/*
+screenshots/diff_images/*
+
