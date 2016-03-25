@@ -22,6 +22,7 @@
     "watchify": "^3.7.0"
   },
   "dependencies": {
-    "handlebars": "^4.0.5"
+    "handlebars": "^4.0.5",
+    "express": "^4.13"
   }
 }
