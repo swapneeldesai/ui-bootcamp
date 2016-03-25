@@ -53507,7 +53507,7 @@ request = require('request');
 
 require('../libs/flickrapi.dev.js');
 
-api_key = 'API KEY';
+api_key = 'e4350f521d99f3932e8424c762d0f8d7';
 
 Gateway = (function() {
   function Gateway() {
@@ -53522,7 +53522,10 @@ Gateway = (function() {
       text: query,
       extras: 'url_o'
     }, function(error, response) {
-      return callback(response);
+      callback(response);
+      return request('http://localhost:3000/flicker.json', function(error, response, body) {
+        return callback(JSON.parse(body));
+      });
     });
   };
 
