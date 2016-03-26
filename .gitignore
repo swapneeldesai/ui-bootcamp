@@ -8,6 +8,3 @@ node_modules/
 .DS_Store
 #IDE config
 node_modules
-failures/*.png
-screenshots/base_images/*.png
-screenshots/diff_images/*.png
