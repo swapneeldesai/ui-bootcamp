@@ -6,9 +6,8 @@ node_modules/
 
 .idea/
 .DS_Store
-testconfig.json
 #IDE config
 node_modules
-failures
-screenshots/base_images/*
-screenshots/diff_images/*
+failures/*.png
+screenshots/base_images/*.png
+screenshots/diff_images/*.png

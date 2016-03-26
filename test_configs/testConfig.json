@@ -1,0 +1,39 @@
+{
+  "global": {
+    "subdomain": "http://localhost",
+    "port": 1111,
+    "waitTime": 100,
+    "viewports": {
+      "mobile": {
+        "height": 540,
+        "width": 480
+      },
+      "desktop": {
+        "height": 1024,
+        "width": 1200
+      },
+      "tablet": {
+        "height": 768,
+        "width": 1024
+      },
+      "mobile-landscape": {
+        "height": 480,
+        "width": 540
+      },
+      "tablet-landscape": {
+        "height": 1024,
+        "width": 768
+      }
+    },
+    "screenShotDirectoryPath": "/screenshots"
+  },
+  "tests": [
+    {
+      "domain":"",
+      "moduleName": "gallery",
+      "relativeUrl": "",
+      "waitTime": 100,
+      "viewport":"desktop"
+    }
+  ]
+}
