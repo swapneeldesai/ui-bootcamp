@@ -3,8 +3,10 @@ node_modules/
 .gulp-scss-cache/
 .sass-cache/
 
-
 .idea/
-.DS_Store
+testconfig.json
 #IDE config
-node_modules
+screenshots/failures/*.png
+screenshots/base_images/*.png
+screenshots/diff_images/*.png
+

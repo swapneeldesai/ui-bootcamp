@@ -33,7 +33,9 @@
       "moduleName": "gallery",
       "relativeUrl": "",
       "waitTime": 100,
-      "viewport":"desktop"
+      "viewport":"desktop",
+      "actionBased": true,
+      "actionSelector": ".label-animals"
     }
   ]
 }
