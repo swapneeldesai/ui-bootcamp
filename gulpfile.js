@@ -1,7 +1,9 @@
 var gulp = require('gulp'),
     coffee = require('gulp-coffee'),
-    sass = require('gulp-sass');
+    sass = require('gulp-sass'),
+    jasmine = require('gulp-jasmine');
 
+require('coffee-script/register');
 
 gulp.task('js', function() {
   gulp.src('app/src/*.coffee')
@@ -14,3 +16,8 @@ gulp.task('css', function() {
     .pipe( sass() )
     .pipe( gulp.dest('public/css') );
 })
+
+gulp.task('jasmine', function() {
+  gulp.src('app/test/*.coffee')
+    .pipe( jasmine() );
+});

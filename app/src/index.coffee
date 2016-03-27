@@ -1,1 +1,5 @@
-console.log "CoffeeScript"
+class HelloWorld
+  message: () ->
+    "Hello World"
+
+module.exports = HelloWorld    
