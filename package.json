@@ -1,11 +1,17 @@
 {
   "name": "ui-bootcamp-advance",
   "version": "0.0.1",
-  "description": "",
+  "description": "TW UI Bootcamp Advance",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "author": "Shridhar Deshmukh",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.13.4",
+    "jade": "^1.11.0"
   },
-  "author": "",
-  "license": "ISC"
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-coffee": "^2.3.1",
+    "gulp-sass": "^2.2.0"
+  }
 }
