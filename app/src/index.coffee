@@ -1,5 +1,4 @@
-class HelloWorld
-  message: () ->
-    "Hello World"
+FlickrService  = require './services/FlickrService'
 
-module.exports = HelloWorld    
+FlickrService.getImage 'sunrise', (images) ->
+    console.log images

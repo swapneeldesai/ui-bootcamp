@@ -11,9 +11,12 @@
     "jade": "^1.11.0"
   },
   "devDependencies": {
+    "coffeeify": "^2.0.1",
     "gulp": "^3.9.1",
+    "gulp-browserify": "^0.5.1",
     "gulp-coffee": "^2.3.1",
     "gulp-jasmine": "^2.3.0",
+    "gulp-rename": "^1.2.2",
     "gulp-sass": "^2.2.0",
     "run-sequence": "^1.1.5"
   }
