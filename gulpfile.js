@@ -28,6 +28,6 @@ gulp.task('watch', function() {
   gulp.watch('app/styles/**/*.sass', ['css']);
 });
 
-gulp.task('bundle', function(callback) {
-  runSequence(['css', 'js'], callback);
+gulp.task('default', function(callback) {
+  runSequence(['css', 'js'], 'watch', callback);
 });
