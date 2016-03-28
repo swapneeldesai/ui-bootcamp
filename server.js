@@ -10,11 +10,11 @@ app.listen(8080, function() {
 //   res.send('Hello World')
 // });
 
-app.set('views', path.join(__dirname, 'public'));
+app.set('views', path.join(__dirname, 'app', 'views'));
 app.set('view engine', 'jade');
 
 app.get('/', function(req, res) {
   res.render('index');
 });
 
-// app.use(express.static('public'));
+app.use(express.static('public'));
