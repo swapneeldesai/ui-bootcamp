@@ -18,7 +18,7 @@ gulp.task('css', function() {
     .pipe( gulp.dest('public/css') );
 });
 
-gulp.task('jasmine', function() {
+gulp.task('test', function() {
   gulp.src('app/test/*.coffee')
     .pipe( jasmine() );
 });
