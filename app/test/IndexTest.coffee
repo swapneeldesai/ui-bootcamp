@@ -1,4 +1,4 @@
-HelloWorld = require '../src/index'
+HelloWorld = require '../src/HelloWorld'
 
 describe "Index", () ->
 

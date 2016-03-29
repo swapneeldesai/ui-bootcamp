@@ -2,12 +2,16 @@ FlickrGateway = require('../gateways/FlickrGateway')
 Image = require('../models/Image')
 
 class FlickrService
-  getImage: (query, callback) ->
+  getImages: (query, callback) ->
     @callback = callback
-    FlickrGateway.getImage query, @processResponse
+    FlickrGateway.getImages query, @processResponse
 
   processResponse: (response) =>
     photos = response.photos.photo.map (photo) -> new Image(photo)
     @callback photos.filter (photo) -> photo.isValid()
 
-module.exports = new FlickrService()
+instance = null
+get = () ->
+  instance ?= new FlickrService();
+
+module.exports = get();

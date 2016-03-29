@@ -8,11 +8,15 @@ class FlickrGateway
       api_key: api_key,
       format: 'json'
     }
-  getImage: (query, callback) ->
+  getImages: (query, callback) ->
     @flickr.photos.search {
       text: query,
       extras: 'url_o'
     }, (error, response) ->
       callback response
 
-module.exports = new FlickrGateway()
+instance = null
+get = () ->
+  instance ?= new FlickrGateway();
+
+module.exports = get();
