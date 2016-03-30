@@ -1,0 +1,11 @@
+script(id="results-view" type="text/x-handlebars-template")
+    {{#each images}}
+    .card
+      .card-image
+        img(src='{{url}}', alt='')
+      .card-header
+        | First Card
+      .card-copy
+        p
+          | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, officiis sunt neque facilis culpa molestiae necessitatibus delectus veniam provident.
+    {{/each}}

@@ -4,7 +4,8 @@ var gulp         = require('gulp'),
     jasmine      = require('gulp-jasmine'),
     browserify   = require('gulp-browserify'),
     rename       = require('gulp-rename'),
-    runSequence  = require('run-sequence');
+    runSequence  = require('run-sequence'),
+    jasmineNode = require('gulp-jasmine-node');
 
 require('coffee-script/register');
 
@@ -23,7 +24,7 @@ gulp.task('css', function() {
 
 gulp.task('test', function() {
   gulp.src('app/test/**/*.coffee')
-    .pipe( jasmine() );
+    .pipe( jasmineNode() );
 });
 
 gulp.task('watch', function() {

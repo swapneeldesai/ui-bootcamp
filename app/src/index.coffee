@@ -1,4 +1,6 @@
 FlickrService  = require './services/FlickrService'
+ResultsView = require './views/searchview'
 
-FlickrService.getImage 'sunrise', (images) ->
-    console.log images
+FlickrService.getImage 'landscapes', (images) ->
+    ResultsView.render "#results-view", "#contents", images
+

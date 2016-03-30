@@ -1,6 +1,6 @@
 class Image
   constructor: (json) ->
-    @url = json.url_o
+    @url = json.url_m
     @id = json.id
     @title = json.title
 
