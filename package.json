@@ -17,7 +17,7 @@
     "html2js-browserify": "^1.1.0",
     "karma": "^0.12.37",
     "karma-as-promised": "^1.0.0",
-    "node-sass": "^3.4.2",
+    "node-sass": "^4.14.1",
     "run-sequence": "^1.0.2",
     "watchify": "^3.7.0"
   },
